@@ -1,0 +1,99 @@
+body{
+    background-color: #60463B;
+    margin: 0;
+}
+header{
+    background-color: #2E3138;
+    color: #CCC9E7;
+    padding-bottom: 1rem;
+}
+h1{
+    text-align: center;
+    font-size:4rem;
+    margin: 0;
+    padding: 1rem;
+}
+nav{
+    background-color: #2E3138;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display:flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 0;
+    justify-content: center;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    margin:1rem;
+    text-decoration: none;
+    color: #CCC9E7;
+}
+.quests{
+    display:flex;
+    flex-direction: row;
+}
+.quests div{
+    width: 50vw;
+}
+.daily , .tomorrow, figure{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #856A5D;
+    color: #2E3138;
+}
+figure{
+    text-align: center;
+}
+.priceItem{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+#bankBody{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#bankBody #bank{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#bankBody #bank .item{
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    background-color: #856A5D;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem;
+}
+#bankBody #bank .item img{
+    order: 1;
+    width: 128px;
+    margin: 0 auto;
+}
+#bankBody #bank .item h3{
+    order: 2;
+    width: 256px;
+    margin: 10px auto;
+    text-align: center;
+}
+#bankBody #bank .item h5{
+    order: 3;
+    width: 256px;
+    margin: 0 auto;
+    text-align: justify;
+}
+#bankBody #numberItems{
+ 
+}
+#bankBody #numberItems div{
+
+}
