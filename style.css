@@ -80,20 +80,20 @@ figure{
     margin: 0 auto;
 }
 #bankBody #bank .item h3{
-    order: 2;
+    order: 3;
     width: 256px;
     margin: 10px auto;
     text-align: center;
 }
 #bankBody #bank .item h5{
-    order: 3;
+    order: 4;
     width: 256px;
     margin: 0 auto;
     text-align: justify;
 }
-#bankBody #numberItems{
- 
-}
-#bankBody #numberItems div{
-
+#bankBody #bank .item h6{
+    order: 2;
+    text-align: center;
+    font-size: x-large;
+    margin: 0;
 }

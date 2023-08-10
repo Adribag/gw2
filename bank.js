@@ -27,17 +27,52 @@ inputCha.addEventListener("click", (event) => {
         const bankItems = await response.json();
 
         //console.log(bankItems);
-        // let arrayBank = [];
+
+        let arrayBank = [];
+
+        for (let i = 0; i < bankItems.length; i++) {
+            if(bankItems[i] == null){
+                continue;
+            }
+            
+            let  objItems = {};
+            for (const [itemKey, itemValue] of Object.entries(bankItems[i])) {
+                //console.log(itemValue);
+                if(itemKey == "id"){
+                    objItems.id = itemValue;
+                }
+                if(itemKey == "count"){
+                    objItems.count = itemValue;
+                }
+                //objItems.id = bankItems[i].id;
+                //objItems.count = bankItems[i].count;
+        
+                arrayBank.push(objItems);        
+
+            }
+        }
+        //console.log(arrayBank);
         for (const [keys, value] of Object.entries(bankItems)) {
-            //var itemObject = new Object();
-        //     let n = 0;
-        //     while (n < 1) {
-        //     console.log(value);
-        //     n++;
-        //    }
             if(value == null){
                 continue;
             }
+            //var itemObject = new Object();
+            //     let n = 0;
+            //     while (n < 1) {
+                //     console.log(value);
+                //     n++;
+                //    }
+                
+                //console.log(value);
+                
+            //for (let i = 0; i < bankItems.length; i++) {
+                // let objId = "id:"+i;
+                // let objCount = "count:"+i;
+                
+                //objItems = {objId : value.id, i: value.count} 
+            //}
+            //console.log(arrayBank);
+            
             
             
             for (const [key, val] of Object.entries(value)) {
@@ -82,6 +117,18 @@ inputCha.addEventListener("click", (event) => {
                             //     count.textContent = val;
                             //     div.appendChild(count);
                             // }
+                            const arrayCount = [];
+                            const count = document.createElement("h6");
+                            for (let i = 0; i < arrayBank.length; i++) {
+                                if (val == arrayBank[i].id) {
+                                    const pushCount = arrayCount.push("x"+arrayBank[i].count);
+                                    const unique = Array.from(new Set(arrayCount));
+                                    count.textContent = unique;
+                                    div.appendChild(count);                                       
+                                }
+                                        
+                            }
+                            
                             for (const [itemOpt, itemDesc] of Object.entries(itemVal)){
                                 // console.log(itemOpt);
                                 // if (itemOpt == "id"){
@@ -91,6 +138,22 @@ inputCha.addEventListener("click", (event) => {
                                 //     div.appendChild(countObj);
                                 // }
                                 
+                                //console.log(arrayBank[1]);
+                             
+                                    // const element = array[i];
+                                    // if((itemOpt == "id") == (arrayBank[i].id)){
+                                    //     console.log(arrayBank[i].count);
+                                    //     const count = document.createElement("h1");
+                                    //     count.textContent = arrayBank[i].count;
+                                    //     div.appendChild(count);
+                                    // }
+
+
+
+                                // AFFICHER LES COUNT DES OBJETS
+
+
+
                                 
                                 if(itemOpt == "name"){
                                     //console.log(itemDesc);
