@@ -71,6 +71,10 @@ inputCha.addEventListener("click", (event) => {
 
                         //console.log(itemInfos);
                         for (const [itemKey, itemVal] of Object.entries(itemInfos)) {
+                            if(response.status === 404){
+                                continue;
+                            }
+                            //console.log(itemVal);
                             const div = document.createElement("div");
                             div.classList.add("item")
                             // if(key == "count"){
@@ -86,6 +90,8 @@ inputCha.addEventListener("click", (event) => {
                                 //     countObj.textContent = count;
                                 //     div.appendChild(countObj);
                                 // }
+                                
+                                
                                 if(itemOpt == "name"){
                                     //console.log(itemDesc);
                                     const txt = document.createElement("h3");
