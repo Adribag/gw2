@@ -123,12 +123,11 @@ inputCha.addEventListener("click", (event) => {
                                 if (val == arrayBank[i].id) {
                                     const pushCount = arrayCount.push("x"+arrayBank[i].count);
                                     const unique = Array.from(new Set(arrayCount));
-                                    count.textContent = unique;
+                                    count.textContent = unique[0];
                                     div.appendChild(count);                                       
-                                }
-                                        
+                                }             
                             }
-                            
+
                             for (const [itemOpt, itemDesc] of Object.entries(itemVal)){
                                 // console.log(itemOpt);
                                 // if (itemOpt == "id"){
