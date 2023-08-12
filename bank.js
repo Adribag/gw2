@@ -111,7 +111,7 @@ inputCha.addEventListener("click", (event) => {
                             }
                             //console.log(itemVal);
                             const div = document.createElement("div");
-                            div.classList.add("item")
+                            div.classList.add("item");
                             // if(key == "count"){
                             //     const count = document.createElement("h6");
                             //     count.textContent = val;

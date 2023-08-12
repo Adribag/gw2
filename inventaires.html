@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
         <link rel="stylesheet" href="style.css">
-        <title>GW2 NINJA</title>
+        <title>GW2 NINJA - gw2.abaglin.com</title>
     </head>
     <body>
         <header>
@@ -17,7 +18,7 @@
                     <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="banque.html">Banque</a>
+                    <a href="banque.html">Banques</a>
                 </li>
                 <li>
                     <a href="inventaires.html">Iventaires</a>
@@ -26,22 +27,22 @@
         </nav>
         <h2>Inventaires</h2>
         <fieldset>
-            <legend>Select:</legend>
           
             <div>
-              <input type="radio" id="adri" name="bank" value="adri" />
+              <input type="radio" id="adri" name="bank" value="adri" class="radioBtn"/>
               <label for="adri">Adri</label>
             </div>
           
             <div>
-              <input type="radio" id="cha" name="bank" value="cha" />
+              <input type="radio" id="cha" name="bank" value="cha" class="radioBtn"/>
               <label for="cha">Cha</label>
             </div>
           
           </fieldset>
-        <div id="invtoryBody">
-            <section id="bank"></section>
-            <section id="numberItems"></section>
+        <div id="inventoryBody">
+            <h2>- Iventaire partagé -</h2>
+            <section id="sharedInventory">
+            </section>
         </div>
     </body>
     <script src="inventory.js"></script>  
