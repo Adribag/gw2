@@ -7,7 +7,11 @@ body{
     margin: 0;
     font-family: 'gw2','Helvetica','Arial';
     background-image: url('bggw2.png');
+<<<<<<< HEAD
     background-size: cover;
+=======
+    background-size: 1920px 1080px;
+>>>>>>> 88ba84f34d17adfc64294b44f25a30e0e6ad5a5f
     background-attachment: fixed;
 }
 header{
@@ -67,11 +71,14 @@ nav ul li:hover{
     color: #2E3138;
     font-family: 'Arial';
     opacity: 0.8;
+<<<<<<< HEAD
     box-shadow: 0px 0px 11px 0px #000000;
     border-radius: 20px;
     background-image: url('gw2logo.png');
     background-repeat: no-repeat;
     background-size: cover;
+=======
+>>>>>>> 88ba84f34d17adfc64294b44f25a30e0e6ad5a5f
 }
 figure{
     text-align: center;
