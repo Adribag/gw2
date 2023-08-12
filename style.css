@@ -1,11 +1,20 @@
+@font-face {
+    font-family: "gw2";
+    src: url("gwtwofont.ttf");
+}
 body{
     background-color: #60463B;
     margin: 0;
+    font-family: 'gw2','Helvetica','Arial';
+    background-image: url('bggw2.png');
+    background-size: cover;
+    background-attachment: fixed;
 }
 header{
     background-color: #2E3138;
     color: #CCC9E7;
     padding-bottom: 1rem;
+    opacity: 0.8;
 }
 h1{
     text-align: center;
@@ -13,10 +22,15 @@ h1{
     margin: 0;
     padding: 1rem;
 }
+h2{
+    text-align: center;
+}
 nav{
     background-color: #2E3138;
     position: sticky;
     top: 0;
+    opacity: 0.8;
+    z-index: 9999;
 }
 nav ul{
     display:flex;
@@ -27,10 +41,16 @@ nav ul{
 }
 nav ul li{
     list-style-type: none;
+    box-shadow: 0px 0px 11px 0px #000000;
 }
 nav ul li a{
     margin:1rem;
+    padding:1rem;
     text-decoration: none;
+    color: #CCC9E7;
+}
+nav ul li:hover{
+    background-color: #CCC9E7;
     color: #CCC9E7;
 }
 .quests{
@@ -43,8 +63,15 @@ nav ul li a{
 .daily , .tomorrow, figure{
     margin: 1rem;
     padding: 1rem;
-    background-color: #856A5D;
+    background-color: #CCC9E7;
     color: #2E3138;
+    font-family: 'Arial';
+    opacity: 0.8;
+    box-shadow: 0px 0px 11px 0px #000000;
+    border-radius: 20px;
+    background-image: url('gw2logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 figure{
     text-align: center;
@@ -53,6 +80,34 @@ figure{
     display:flex;
     flex-direction: row;
     justify-content:space-evenly;
+}
+fieldset{
+    border:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.radioBtn{
+    display: none;
+}
+.radioBtn + label{
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    color: #CCC9E7;
+    background-color: #2E3138;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 11px 0px #000000;
+}
+.radioBtn:hover + label{
+    color:#2E3138;
+    background-color: #CCC9E7;
+}
+.radioBtn:checked + label{
+    color:#2E3138;
+    background-color: #CCC9E7;
 }
 #bankBody{
     display:flex;
@@ -69,10 +124,12 @@ figure{
     display: flex;
     flex-direction: column;
     min-height: 300px;
-    background-color: #856A5D;
+    background-color: #CCC9E7;
     border-radius: 20px;
     margin: 1rem;
     padding: 1rem;
+    opacity: 0.8;
+    box-shadow: 0px 0px 11px 0px #000000;
 }
 #bankBody #bank .item img{
     order: 1;
@@ -84,12 +141,14 @@ figure{
     width: 256px;
     margin: 10px auto;
     text-align: center;
+    font-family: 'Arial';
 }
 #bankBody #bank .item h5{
     order: 4;
     width: 256px;
     margin: 0 auto;
     text-align: justify;
+    font-family: 'Arial';
 }
 #bankBody #bank .item h6{
     order: 2;
