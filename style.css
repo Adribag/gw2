@@ -251,6 +251,7 @@ fieldset{
     padding: 1rem;
     margin: 1rem;
     border: 1px solid #2E3138;
+    border-radius: 10px;
 }
 .item h2{
     order: 3;
@@ -268,3 +269,11 @@ fieldset{
     text-align: center;
     font-size: medium;
 }
+.Legendary  { border: 5px solid #4C139D; }
+.Ascended   { border: 5px solid #FB3E8D; }
+.Exotic     { border: 5px solid #FFA405; }
+.Rare       { border: 5px solid #FCD00B; }
+.Masterwork { border: 5px solid #1A9306; }
+.Fine       { border: 5px solid #62A4DA; }
+.Basic      { border: 5px solid #000000; }
+.Junk       { border: 5px solid #AAAAAA; }

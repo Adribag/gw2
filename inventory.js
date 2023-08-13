@@ -190,6 +190,9 @@ async function getCharacters(charactersIds, token){
                                                 name.textContent = itemValue;
                                                 item.appendChild(name);
                                             }
+                                            if(itemId == "rarity"){
+                                                item.classList.add(itemValue);
+                                            }
                                         }
                                     }
                                     getItemImg();

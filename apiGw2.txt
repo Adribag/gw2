@@ -4,6 +4,7 @@ https://api.guildwars2.com/v2/items?ids=67836
 https://api.guildwars2.com/v2/worldbosses
 https://api.guildwars2.com/v2/achievements?id=1
 https://api.guildwars2.com/v2/account/inventory?access_token=E05D5508-FEA5-114E-BC29-432055F1BDEC45B7E217-81E3-4880-BBEC-026A80976E37
+https://api.guildwars2.com/v2/account/skins?access_token=E05D5508-FEA5-114E-BC29-432055F1BDEC45B7E217-81E3-4880-BBEC-026A80976E37
 
 ** Public API v2 **
 
