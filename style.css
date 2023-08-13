@@ -35,19 +35,26 @@ nav{
 nav ul{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 1rem;
     margin: 0;
     justify-content: center;
+    text-align: center;
 }
 nav ul li{
     list-style-type: none;
     box-shadow: 0px 0px 11px 0px #000000;
+    min-width: 200px;
 }
 nav ul li a{
     margin:1rem;
     padding:1rem;
     text-decoration: none;
     color: #CCC9E7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    display: inline-block;
 }
 nav ul li:hover{
     background-color: #CCC9E7;
@@ -167,7 +174,7 @@ fieldset{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    margin: 6rem 0;
     background-color: #2E3138;
     opacity: 0.8;
 }
@@ -209,4 +216,55 @@ fieldset{
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #2E3138;
+}
+.character{
+    background-color: #CCC9E7;
+    opacity: 0.8;
+    margin: 2em;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url('gw2logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.character:before{
+    content: '';
+    display: block;
+    height: 15em;
+}
+.character button{
+    padding: 1rem;
+    display: inline-block;
+    margin: 0 auto;
+}
+.inventory{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #2E3138;
+}
+.item h2{
+    order: 3;
+    text-align: center;
+    font-size: medium;
+    width: 128px;
+}
+.item img{
+    order: 1;
+    width: 128px;
+    margin: 0 auto;
+}
+.item h5{
+    order: 2;
+    text-align: center;
+    font-size: medium;
 }
