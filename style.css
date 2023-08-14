@@ -258,6 +258,7 @@ fieldset{
     text-align: center;
     font-size: medium;
     width: 128px;
+    margin-bottom: 0;
 }
 .item img{
     order: 1;
@@ -268,6 +269,7 @@ fieldset{
     order: 2;
     text-align: center;
     font-size: medium;
+    margin: 0;
 }
 .Legendary  { border: 5px solid #4C139D; }
 .Ascended   { border: 5px solid #FB3E8D; }
@@ -277,3 +279,11 @@ fieldset{
 .Fine       { border: 5px solid #62A4DA; }
 .Basic      { border: 5px solid #000000; }
 .Junk       { border: 5px solid #AAAAAA; }
+
+#clock{
+    text-align: center;
+}
+#worldBoss{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
